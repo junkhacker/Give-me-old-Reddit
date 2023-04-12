@@ -10,6 +10,12 @@
 // @license      MIT
 // ==/UserScript==
 
+GM_addStyle(`
+    #sr-header-area .redesign-beta-optin {
+        display: none !important;
+    };
+`)
+
 function test(url){
     if(!!url.match(/^(|http(s?):\/\/)(new|chat)\.reddit.com(.*)/gim)){
     return false;}
@@ -40,11 +46,6 @@ function betterReddit(){
             link.setAttribute('href', greatNewLink);
         }
     });
-    GM_addStyle(`
-    #sr-header-area .redesign-beta-optin {
-        display: none !important;
-    };
-    `)
 }
 
 if(test(window.location.href)){window.location.assign(getNewPagePlease(window.location.href));}
