@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Give me old Reddit, better Reddit
-// @version      1.4
+// @version      1.5
 // @description  Converts reddit.com links to old.reddit.com links while breaking as little as possible. 
 // @author       Junkhacker
 // @match        ://*.reddit.com/*
